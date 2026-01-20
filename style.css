@@ -142,7 +142,7 @@ body {
   align-items: center;
 }
 .stat-bar {
-  max-width: 108rem;
+  max-width: 122rem;
   margin: -70px auto 0; /* 关键：向上压住图片 */
   background-color: var(--color-accent);
   border-radius: 20px;
@@ -184,7 +184,7 @@ body {
 
 /* Products Section */
 .products {
-  max-width: 108rem;
+  max-width: 122rem;
   margin: 8rem auto;
 }
 .products-top {
@@ -231,7 +231,7 @@ body {
 
 .products-icons div:hover {
   background-color: #fff;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .products-icons div:last-child {
@@ -240,4 +240,222 @@ body {
 
 .products-icons img {
   width: 6rem;
+}
+
+/* Pricing */
+.pricing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20rem;
+}
+
+.pricing-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+.pricing-top img {
+  margin-right: 20rem;
+}
+
+.pricing-top p {
+  font-size: 2rem;
+  color: var(--color-text);
+  width: 50rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-top h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  color: var(--color-accent);
+  width: 50rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+button {
+  padding: 1.1rem 2.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffffff;
+  border: 0.1rem solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.pricing-cards {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.pricing-card {
+  width: 30rem;
+  height: 45rem;
+  border: 0.1rem solid var(--color-primary);
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.pricing-card-icons {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card-icons i {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(2rem);
+  transition: all 0.3s;
+}
+
+.pricing-card:hover .pricing-card-icons i {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.img-wrapper {
+  height: 25rem;
+}
+.pricing-card h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #073e72;
+}
+
+.star i {
+  font-size: 1.6rem;
+  color: #f8872b;
+}
+
+.pricing-card h4 {
+  font-size: 1.8rem;
+  color: #073e72;
+}
+
+.blog {
+  width: 100%;
+  height: 60vh;
+  background-color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-content {
+  width: 50%;
+  height: 48rem;
+  background-color: var(--color-secondary);
+  border-radius: 3rem;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.blog-content img {
+  width: 40rem;
+}
+
+.blog-content div {
+  width: 40rem;
+}
+
+.blog-content div h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+/* Contact */
+.contact {
+  width: 100%;
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  width: 60%;
+  height: 15rem;
+  display: flex;
+  /* position: relative; */
+}
+
+.content-left {
+  width: 40%;
+  height: 80%;
+  background-color: var(--color-accent);
+  border-radius: 2rem 0 0 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+}
+
+.content-left p {
+  width: 80%;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.content-right {
+  width: 60%;
+  height: 80%;
+  background-color: var(--color-primary);
+  border-radius: 0 2rem 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right input {
+  width: 35rem;
+  height: 4rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  margin-right: 2rem;
 }
