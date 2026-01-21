@@ -29,7 +29,7 @@
           <div class="navbar-top">
               <a href="/" class="logo">
                 <img src="images/logo.png" alt="logo" class="logo-icon" />
-                <span>funicture</span>
+                <span>funiShop</span>
               </a>
               <div class="search-bar">
                 <input type="text" placeholder="what are you looking for?" />
@@ -100,7 +100,7 @@
 
       <!-- Products -->
        <section class="products">
-        <div class="products-top">
+        <div class="products-top reveal">
          <div class="products-top-content">
            <p class="subtitle">Search For</p>
             <h1 class="title">1500+</h1>
@@ -137,7 +137,7 @@
        </section>
       <!-- pricing -->
        <section class="pricing">
-        <div class="pricing-top">
+        <div class="pricing-top reveal">
           <img src="/images/home.png" alt="home image" />
           <div class="pricing-top-content">
             <p>GET READY FOR</p>
@@ -265,12 +265,12 @@
        <!-- blog -->
         <section class="blog">
         <div class="blog-content">
-             <div class="magazine">
+             <div class="magazine reveal">
               <img src="images/book.png">
                 </div>
                 <div class="trends">
                    <h1>WINTER TRENDS Handbook 2025</h1>
-                   <button>DOWNLOAD</button>
+                   <button id="downloadBtn">DOWNLOAD</button>
                 </div>
         </div>
         </section>
@@ -281,12 +281,18 @@
             <p>Subscribe to our newsletter and grab 30% OFF</p>
            </div>
            <div class="content-right">
-            <input type="text" placeholder="Enter your email address" />
-            <button>SIGN UP</button>
+            <input type="text" id="emailInput" placeholder="Enter your email address" />
+            <button type="submit" id="subscribeBtn">SUBSCRIBE</button>
+              <p id="feedback" class="feedback"></p>
            </div>
           </div>
+          <div class="content-right-success hidden">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Thanks for subscribing!</p>
+            <button>Dismiss message</button>
+          </div>
          </section>
-
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
